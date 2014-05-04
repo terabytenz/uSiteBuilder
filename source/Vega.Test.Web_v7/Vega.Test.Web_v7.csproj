@@ -59,10 +59,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Vega.USiteBuilder, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ExternalLibraries\uSiteBuilder\Vega.USiteBuilder.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\Splashes\booting.aspx" />
@@ -73,7 +69,6 @@
   <ItemGroup>
     <Compile Include="Masterpages\FirstLevel.Master.cs">
       <DependentUpon>FirstLevel.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Masterpages\FirstLevel.Master.designer.cs">
       <DependentUpon>FirstLevel.Master</DependentUpon>
@@ -89,6 +84,10 @@
     <ProjectReference Include="..\Vega.Test.Entities\Vega.Test.Entities.csproj">
       <Project>{FDB24BFD-EDFF-4C7F-8DF2-982B246F9F12}</Project>
       <Name>Vega.Test.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vega.USiteBuilder\Vega.USiteBuilder.csproj">
+      <Project>{acd95fdb-d1e3-43ba-8a00-a1d8f663c69b}</Project>
+      <Name>Vega.USiteBuilder</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
