@@ -70,11 +70,11 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="umbraco">
-      <HintPath>..\ExternalLibraries\umbraco.dll</HintPath>
-    </Reference>
     <Reference Include="Umbraco.Core">
       <HintPath>..\ExternalLibraries\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco">
+      <HintPath>..\ExternalLibraries\umbraco.dll</HintPath>
     </Reference>
     <Reference Include="umbraco.DataLayer">
       <HintPath>..\ExternalLibraries\umbraco.DataLayer.dll</HintPath>
