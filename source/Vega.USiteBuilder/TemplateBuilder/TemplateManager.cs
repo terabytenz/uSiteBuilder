@@ -86,6 +86,11 @@ namespace Vega.USiteBuilder
                 foreach (var viewFile in viewsFolder.GetFiles("*.cshtml", SearchOption.TopDirectoryOnly))
                 {
                     string alias = Path.GetFileNameWithoutExtension(viewFile.Name).Replace(" ", "");
+	                if (String.Equals("_ViewStart", alias, StringComparison.OrdinalIgnoreCase))
+	                {
+		                continue;
+	                }
+
                     Template template = Template.GetByAlias(alias);
                     if (template == null)
                     {
